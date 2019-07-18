@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- 請定義問券名稱 -->
+    <title> 火車喜好調查 </title>
+    <style>
+        body {
+            background: url(t_p06.jpg);
+            /* background-repeat: repeat-y; */
+        }
+        div{
+            background-color:darkorange;
+            max-width: 30%;
+        }
+
+        form {
+            font-size: 30px;
+            color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+         <H2><img src="Railways_Logo.svg" alt="" width="200px"> 火車喜好調查</H2>
+        
+    </div>
+    <form method="POST">
+
+        <div>
+            <label for="user-name">姓名:</label>
+            <input type="text" name="user-name" id="user-name">
+        </div>
+        <br>
+        <div>
+            <label for="telphone">手機:</label>
+            <input type="tel" name="telphone" id="telphone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+        </div>
+        <br>
+        <div>
+            <label for="e-mail">e-mail:</label>
+            <input type="email" name="e-mail" id="e-mail">
+        </div>
+        <br>
+        <div>
+            <label for="">您是否搭過火車:</label>
+            <input type="radio" name="travel" id="yes">
+            <label for="yes">是</label>
+            <input type="radio" name="travel" id="no">
+            <label for="no">否</label>
+        </div>
+        <br>
+        <figcaption></figcaption>
+        <div>
+            <label for="">您喜歡下列哪種類型的火車(可單複選):</label> <br>
+            <input type="checkbox" name="train" id="emu700">
+            <img src="emu700.jpg" alt="" width="250px"><figcaption>區間車(阿福號)</figcaption>
+            <input type="checkbox" name="train" id="emu800">
+            <img src="emu800.jpg" alt="" width="250px"><figcaption>區間車(微笑號)</figcaption>
+            <input type="checkbox" name="train" id="PP">
+            <img src="PP.jpg" alt="" width="250px"><figcaption>自強號</figcaption>
+            <input type="checkbox" name="train" id="temu1000">
+            <img src="temu1000.jpg" .jpg" alt="" width="250px"><figcaption>太魯閣號</figcaption>
+            <input type="checkbox" name="train" id="temu2000">
+            <img src="temu2000.jpg" alt="" width="250px"><figcaption>普悠瑪號</figcaption>
+        </div>
+        <br>
+        <div>
+            <label for="">對於此問卷是否有任何意見:</label> <br>
+            <textarea name="" id="" cols="45" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" onclick="alert('感謝填寫問卷')" value="提交">
+            <input type="reset" value="重置">
+        </div>
+
+    
+
+
+
+
+
+    </form>
+
+    <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+    <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+    <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+    <!-- 底下是作業需要包含的項目 -->
+    <!-- 1. 問卷需包含 5-7 個問題 -->
+    <!-- 2. type 挑選時，請盡量不重複 -->
+    <!-- 3. 挑選 至少 1 個問題，設置 pattern 檢核 -->
+
+</body>
+
+</html>
